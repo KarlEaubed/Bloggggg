@@ -119,7 +119,7 @@
     {% for post in posts %}
         <div class="article">
             <div class="left">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_1280.jpg" alt="">
+                <img src="{{ post.image.url }}" alt="{{ post.title }}">
             </div>
             <div class="right">
                 <p class="date">{{ post.created_at }}</p>
